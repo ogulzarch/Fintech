@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import Resolver
 
 struct ContentView: View {
+    
+    @Injected var userRepo: UserRepo
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -16,5 +20,13 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .task {
+            do {
+                try await userRepo.fetchUser()
+            } catch {
+                
+            }
+            
+        }
     }
 }

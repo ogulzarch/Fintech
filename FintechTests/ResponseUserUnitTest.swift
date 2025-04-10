@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import Fintech
 
 final class ResponseUserUnitTest: XCTestCase {
 
@@ -32,4 +33,7 @@ final class ResponseUserUnitTest: XCTestCase {
         }
     }
 
+    func testFromString() throws {
+        let user = try JSONDecoder().decode(ResponseUser.self, from: userResponse.data(using: .utf8)!)
+    }
 }

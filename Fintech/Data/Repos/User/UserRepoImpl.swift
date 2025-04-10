@@ -15,7 +15,9 @@ class UserRepoImpl: UserRepo {
     
     func fetchUser() async throws {
         
-        try await manager.request(.user(.getUser))
+//        try await manager.request(.user(.getUser))
+        print("this is the real one")
+        
     }
     
     func updateUser(_: ResponseUser) async throws {

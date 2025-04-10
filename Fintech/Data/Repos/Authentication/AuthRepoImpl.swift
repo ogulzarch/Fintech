@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+class AuthRepoImpl: AuthRepo {
+    
+    func login(userId: String, passcode: String) async throws -> ResponseUser {
+        <#code#>
+    }
+    
+    func logout() async throws {
+        <#code#>
+    }
+    
+    
+}

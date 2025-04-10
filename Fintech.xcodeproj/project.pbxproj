@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC2AE48C2D91AD8100E15375 /* UserRepoFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2AE48B2D91AD8100E15375 /* UserRepoFake.swift */; };
+		FC6E6BF12D7A067E0028F177 /* ResponseUserUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6E6BF02D7A067E0028F177 /* ResponseUserUnitTest.swift */; };
+		FC6E6BF32D7A06970028F177 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6E6BF22D7A06970028F177 /* Responses.swift */; };
 		FC7199DC2D300E960007A3F9 /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7199DB2D300E960007A3F9 /* URLBuilder.swift */; };
 		FC7199DF2D3018690007A3F9 /* SharedTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7199DE2D3018690007A3F9 /* SharedTokens.swift */; };
 		FC7199E12D3019F40007A3F9 /* SharedTokensImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7199E02D3019F40007A3F9 /* SharedTokensImpl.swift */; };
@@ -35,6 +38,7 @@
 		FCEB82AF2D36F3C800B0F798 /* RequestUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB82AE2D36F3C800B0F798 /* RequestUser.swift */; };
 		FCEB82B12D36F77000B0F798 /* RequestLogout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB82B02D36F77000B0F798 /* RequestLogout.swift */; };
 		FCEB82B32D36F77E00B0F798 /* RequestAllAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB82B22D36F77E00B0F798 /* RequestAllAccounts.swift */; };
+		FCFD28B32DA83E0B00916BC4 /* AuthRepoFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFD28B22DA83E0700916BC4 /* AuthRepoFake.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FC2AE48B2D91AD8100E15375 /* UserRepoFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepoFake.swift; sourceTree = "<group>"; };
+		FC6E6BF02D7A067E0028F177 /* ResponseUserUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseUserUnitTest.swift; sourceTree = "<group>"; };
+		FC6E6BF22D7A06970028F177 /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
 		FC7199DB2D300E960007A3F9 /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
 		FC7199DE2D3018690007A3F9 /* SharedTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTokens.swift; sourceTree = "<group>"; };
 		FC7199E02D3019F40007A3F9 /* SharedTokensImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTokensImpl.swift; sourceTree = "<group>"; };
@@ -97,6 +104,7 @@
 		FCEB82AE2D36F3C800B0F798 /* RequestUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestUser.swift; sourceTree = "<group>"; };
 		FCEB82B02D36F77000B0F798 /* RequestLogout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLogout.swift; sourceTree = "<group>"; };
 		FCEB82B22D36F77E00B0F798 /* RequestAllAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAllAccounts.swift; sourceTree = "<group>"; };
+		FCFD28B22DA83E0700916BC4 /* AuthRepoFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepoFake.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				FCC6F93D2D2DBFC20098C555 /* FintechTests.swift */,
+				FC6E6BF02D7A067E0028F177 /* ResponseUserUnitTest.swift */,
+				FC6E6BF22D7A06970028F177 /* Responses.swift */,
 			);
 			path = FintechTests;
 			sourceTree = "<group>";
@@ -283,6 +293,7 @@
 			children = (
 				FC7199F62D30485D0007A3F9 /* AuthRepo.swift */,
 				FC7199F82D3048660007A3F9 /* AuthRepoImpl.swift */,
+				FCFD28B22DA83E0700916BC4 /* AuthRepoFake.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -292,6 +303,7 @@
 			children = (
 				FC7199F22D3034F90007A3F9 /* UserRepo.swift */,
 				FC7199F42D3035080007A3F9 /* UserRepoImpl.swift */,
+				FC2AE48B2D91AD8100E15375 /* UserRepoFake.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -460,6 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCFD28B32DA83E0B00916BC4 /* AuthRepoFake.swift in Sources */,
 				FCC6F96C2D2DC2AA0098C555 /* RequestLogin.swift in Sources */,
 				FC7199DF2D3018690007A3F9 /* SharedTokens.swift in Sources */,
 				FC7199F12D3033FF0007A3F9 /* BaseService.swift in Sources */,
@@ -471,6 +484,7 @@
 				FC7199F92D3048660007A3F9 /* AuthRepoImpl.swift in Sources */,
 				FC7199F52D3035080007A3F9 /* UserRepoImpl.swift in Sources */,
 				FC7199EC2D3031260007A3F9 /* NetworkManager.swift in Sources */,
+				FC2AE48C2D91AD8100E15375 /* UserRepoFake.swift in Sources */,
 				FCEB82AA2D36EBE300B0F798 /* AccountService.swift in Sources */,
 				FCC6F92F2D2DBFC00098C555 /* ContentView.swift in Sources */,
 				FC7199E12D3019F40007A3F9 /* SharedTokensImpl.swift in Sources */,
@@ -488,7 +502,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6E6BF32D7A06970028F177 /* Responses.swift in Sources */,
 				FCC6F93E2D2DBFC20098C555 /* FintechTests.swift in Sources */,
+				FC6E6BF12D7A067E0028F177 /* ResponseUserUnitTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
