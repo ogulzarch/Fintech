@@ -12,13 +12,13 @@ extension Resolver: ResolverRegistering {
     
     public static func registerAllServices() {
         
-        if DEBUG {
+        if true {
             register { UserRepoImpl() }
                 .implements(UserRepo.self)
                 .scope(.application)
             
             
-        } UNIT_TEST {
+        } else {
             register { UserRepoFake() }
                 .implements(UserRepo.self)
                 .scope(.cached)

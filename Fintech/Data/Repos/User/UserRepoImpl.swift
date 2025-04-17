@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 import Resolver
+import Alamofire
 
 class UserRepoImpl: UserRepo {
     
@@ -18,11 +19,18 @@ class UserRepoImpl: UserRepo {
 //        try await manager.request(.user(.getUser))
         print("this is the real one")
         
+//        URLSession.shared.dataTask(with: URLRequest(url: URL(string: "https://google.com")!)) { data, response, error in
+//            
+//            print(data)
+//        }.resume()
+        
+        AF.request("https://google.com").response { response in
+            print(response)
+        }
+        
     }
     
     func updateUser(_: ResponseUser) async throws {
         
     }
-    
-    
 }

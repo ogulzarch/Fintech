@@ -10,11 +10,12 @@ import Foundation
 class AuthRepoImpl: AuthRepo {
     
     func login(userId: String, passcode: String) async throws -> ResponseUser {
-        <#code#>
+        
+        return ResponseUser(userId: "", userName: "")
     }
     
     func logout() async throws {
-        <#code#>
+        
     }
     
     
